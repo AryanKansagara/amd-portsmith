@@ -30,7 +30,7 @@ Comments between tokens do not hide a match. Comments and literals containing th
 
 ## Actual verification
 
-`make test` passes **12 groups / 114 assertions**, including five rule categories, exact CRLF/tab positions, benign lookalikes, prefixed/raw/escaped literals, malformed source and deterministic location shifts. See `test-results.txt` and `demo.json` for the local run. CI configuration is supplied; remote CI has not run here.
+`make test` passes **12 groups / 114 assertions**, including five rule categories, exact CRLF/tab positions, benign lookalikes, prefixed/raw/escaped literals, malformed source and deterministic location shifts. See `test-results.txt` and `demo.json` for the local run. GitHub Actions runs the same checks; inspect Actions for the latest hosted result.
 
 The bounded lexer rejects backslash-newline splicing rather than misreporting continuation comments. It does not implement a preprocessor, macro expansion, conditional compilation, complete C++ parsing, trigraph processing, arbitrary numeric literal semantics or Clang AST analysis. Disabled preprocessor branches are still scanned. The decimal patterns above can be ordinary arithmetic, so findings require human review. Other spellings and more complex expressions may be missed. An empty finding list does not establish portability.
 
