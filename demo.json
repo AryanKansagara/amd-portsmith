@@ -1,0 +1,24 @@
+{
+  "kind": "native_lexical_fixture",
+  "gpu_tested": false,
+  "findings": [
+    {
+      "rule": "hardcoded-warp-mask",
+      "offset": 25,
+      "line": 2,
+      "column": 16
+    },
+    {
+      "rule": "nvidia-architecture-guard",
+      "offset": 33,
+      "line": 3,
+      "column": 5
+    },
+    {
+      "rule": "inline-assembly-review",
+      "offset": 54,
+      "line": 4,
+      "column": 1
+    }
+  ]
+}

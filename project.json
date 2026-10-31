@@ -1,0 +1,9 @@
+{
+  "company": "AMD",
+  "title": "Portsmith",
+  "test_command": "make test",
+  "demo_command": "./build/portsmith demo",
+  "scope": "Bounded C++ lexical migration-hazard scanner; AMD/NVIDIA execution unverified.",
+  "implemented": true,
+  "integration_status": "unverified"
+}

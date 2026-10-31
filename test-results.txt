@@ -1,0 +1,15 @@
+./build/tests
+PASS five explicit hazard rules
+PASS comments strings chars excluded
+PASS raw string prefixes excluded
+PASS escaped quotes and comment markers
+PASS exact byte line column CRLF
+PASS lookalike identifiers numbers operators
+PASS comments between tokens
+PASS ordinary prefixed literals
+PASS unterminated constructs fail closed
+PASS invalid raw delimiter rejected
+PASS deterministic offsets across whitespace
+PASS bounds empty and portable warp variable
+SUMMARY groups=12 assertions=114
+./build/portsmith demo > /dev/null
